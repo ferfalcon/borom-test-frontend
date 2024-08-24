@@ -1,0 +1,23 @@
+html {
+	/* TYPOGRAPHY */
+	/* Family */
+	--ff-main: "Open Sans", sans-serif;
+
+	/* Wieght */
+	--fw-regular: 400;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+
+	/* COLOURS */
+	/* Neutral */
+	--cl-neutral-100: hsl(0 0% 100%);
+	--cl-neutral-200: hsl(208 100% 98%);
+	--cl-neutral-400: hsl(0 0% 100%);
+	--cl-neutral-800: hsl(192 100% 9%);
+
+	/* Accent */
+	--cl-accent-500: hsl(182 58% 66%);
+
+	/* Accent secondary */
+	--cl-accent-secondary-500: hsl(9 100% 63%);
+}

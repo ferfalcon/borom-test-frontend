@@ -1,0 +1,52 @@
+.top-menu {
+	color: white;
+	
+	position: relative;
+	
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.top-menu__toggle {
+	color: white;
+	background: black;
+	border-color: transparent;
+	border-radius: 60px;
+	font-size: 14px;
+	padding: .5em 1em;
+}
+
+.top-menu__content {
+	display: none;
+	flex-direction: column;
+	font-size: 1.5rem;
+	gap: 1rem;
+	padding: 2rem;
+	background: black;
+	width: max-content;
+}
+
+.top-menu__content.active {
+	display: flex;
+	position: absolute;
+	right: 0;
+}
+
+.top-menu__site-links {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.top-menu__language {
+	display: flex;
+	gap: .25rem;
+}
+
+.top-menu__mail-n-social {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}

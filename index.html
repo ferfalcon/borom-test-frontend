@@ -3,95 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+  <link href="./assets/styles/style.css" rel="stylesheet">
   <title>Bienvenidos | Boron studio</title>
 </head>
-<body>
-  <header>
-    <a href="#">
+<body class="body">
+  <header class="body_header">
+    <a class="header-logo" href="#">
       <img src="./assets/images/borom-logo.svg" alt="Borom">
     </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Acerca de</a>
-        </li>
-        <li>
-          <a href="#">Proyectos</a>
-        </li>
-        <li>
-          <a href="#">Repositorio</a>
-        </li>
-        <li>
-          <a href="#">Novedades</a>
-        </li>
-        <li>
-          <a href="#">Contacto</a>
-        </li>
-        <li>
-          <a href="#">En</a>
-        </li>
-        <li>
-          <a href="#" class="active">Es</a>
-        </li>
-      </ul>
+    <nav class="top-menu">
+      <button class="top-menu__toggle" data-top-menu-toggle type="button">Menu</button>
+      <div class="top-menu__content" data-top-menu-content>
+        <ul class="top-menu__site-links   rm-list-default">
+          <li>
+            <a href="#">Acerca de</a>
+          </li>
+          <li>
+            <a href="#">Proyectos</a>
+          </li>
+          <li>
+            <a href="#">Repositorio</a>
+          </li>
+          <li>
+            <a href="#">Novedades</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+        </ul>
+        <button class="search-toggle" type="button">
+          Buscar
+        </button>
+        <ul class="top-menu__language   rm-list-default">
+          <li>
+            <a href="#">En</a>
+          </li>
+          <li> / </li>
+          <li>
+            <a href="#" class="active">Es</a>
+          </li>
+        </ul>
+        <button class="subscribe-button" type="button">Suscribite a nuestro newsleter</button>
+        <div class="top-menu__mail-n-social">
+          <a class="email-link" href="mailto:info@boronstudio.com">info@boronstudio.com</a>
+          <a class="social-link   social-link--you-tube" href="http://www.youtube.com">
+            Youtube
+          </a>
+          <a class="social-link   social-link--you-twitter" href="http://www.twitter.com">
+            Twitter
+          </a>
+        </div>
+      </div>
     </nav>
-    <button type="button">Buscar</button>
   </header>
   <main>
-    <article>
-      <h1>Bienvenidos</h1>
-      <p>Desarrollamos y <em>promovemos investigación, </em>innovación y divulgación sobre <em>tecnología digital</em> y aprendizaje, en <em>Uruguay y América Latina</em></p>
-      <ul>
+    <article class="main-article">
+      <h1 class="main-article__heading">Bienvenidos</h1>
+      <p class="main-article__sub-heading">Desarrollamos y <em class="background">promovemos investigación,</em> innovación y divulgación sobre <em class="underline">tecnología digital</em> y aprendizaje, en <em class="underline   underline--long">Uruguay y América Latina</em></p>
+      <ul class="keywords-slider   rm-list-default">
         <li>
-          <strong>Diseño</strong>
-          <img src="./assets/images/keywords-slider--notes.png" alt="Bloc de notas">
-          <strong>Diseño</strong>
-          <img src="./assets/images/keywords-slider--screen.png" alt="Pantalla con items relacionados al diseño">
+          <div>
+            <strong>Diseño</strong>
+            <img src="./assets/images/keywords-slider--notes.png" alt="Bloc de notas">
+            <strong>Diseño</strong>
+            <img src="./assets/images/keywords-slider--screen.png" alt="Pantalla con items relacionados al diseño">
+          </div>
         </li>
         <li>
-          <strong>Tecnología</strong>
-          <img src="./assets/images/keywords-slider--circuits.png" alt="Circuitos">
-          <strong>Innovación</strong>
-          <img src="./assets/images/keywords-slider--group.png" alt="Personas enfocadas en un papel sobre una mesa">
+          <div>
+            <strong>Tecnología</strong>
+            <img src="./assets/images/keywords-slider--circuits.png" alt="Circuitos">
+            <strong>Innovación</strong>
+            <img src="./assets/images/keywords-slider--group.png" alt="Personas enfocadas en un papel sobre una mesa">
+          </div>
         </li>
         <li>
-          <strong>Uruguay</strong>
-          <img src="./assets/images/keywords-slider--city-skyline.png" alt="Perfil de una ciudad">
-          <strong>Uruguay</strong>
-          <img src="./assets/images/keywords-slider--countryside.png" alt="Paisaje campestre">
+          <div>
+            <strong>Uruguay</strong>
+            <img src="./assets/images/keywords-slider--city-skyline.png" alt="Perfil de una ciudad">
+            <strong>Uruguay</strong>
+            <img src="./assets/images/keywords-slider--countryside.png" alt="Paisaje campestre">
+          </div>
         </li>
       </ul>
-      <p>Somos una organización autónoma que busca resolver desafíos relacionados con el aprendizaje y la mediación de las tecnologías, a través de metodologías innovadoras y un abordaje práctico, social y participativo.</p>
-      <section>
-        <h2>Nuestro enfoque</h2>
-        <p>Está orientada a problematizar y aportar ideas y soluciones a la implementación actual y futura de Boron Studio y de otros actores nacionales e internacionales.</p>
-        <img src="./assets/images/focus-girl.png" alt="Girl focus on a screen">
+      <p class="main-article__copy">Somos una organización autónoma que busca resolver desafíos relacionados con el aprendizaje y la mediación de las tecnologías, a través de metodologías innovadoras y un abordaje práctico, social y participativo.</p>
+      <section class="article-w-image">
+        <h2 class="article-w-image__heading">Nuestro enfoque</h2>
+        <div class="article-w-image__copy">
+          <p>Está orientada a problematizar y aportar ideas y soluciones a la implementación actual y futura de Boron Studio y de otros actores nacionales e internacionales soluciones a la implementación actual y futura de Boron Studio y de otros actores nacionales e internacionales.</p>
+          <p>Está orientada a problematizar y aportar ideas y soluciones a la implementación actual y futura de Boron Studio y de otros actores nacionales e internacionales soluciones a la implementación actual y futura de Boron Studio y de otros actores nacionales e internacionales.</p>
+        </div>
+        <picture class="article-w-image__image">
+          <img class="" src="./assets/images/focus-girl.png" alt="Girl focus on a screen" width="720" height="730">
+          <!-- <img class="" src="./assets/images/news--libro-lo-que-puede.png" alt="Girl focus on a screen" width="359" height="240"> -->
+        </picture>
       </section>
     </article>
-    <section>
+    <section style="display: none;">
       <h2>Seguinos en Twitter</h2>
       <img src="./assets/images/metting.png" alt="Personas en un reunión">
       <div>
-        <ul>
-          <li>
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🌟 Finding the right typeface for a logo is challenging and time-consuming, blending creativity with practicality. <br><br>↬ Levi Honing shares tips and tools to enhance your typography journey. Dive in to create a logo that’s both expressive and purposeful:<a href="https://t.co/PQYkqmbogT">https://t.co/PQYkqmbogT</a></p>&mdash; Smashing Magazine 🇺🇦 🏳️‍🌈 (@smashingmag) <a href="https://twitter.com/smashingmag/status/1826606716571844925?ref_src=twsrc%5Etfw">August 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🔥 New blog post! 🔥<br><br>Eigensolutions: composability as the antidote to overfit<a href="https://t.co/uu2yDBvUk1">https://t.co/uu2yDBvUk1</a><br><br>A diversion from my other blog posts, as it’s more abstractly about design thinking, with insights that (hopefully) apply on a wide range of creator tools, from visual editors…</p>&mdash; Lea Verou (@LeaVerou) <a href="https://twitter.com/LeaVerou/status/1737181344935911875?ref_src=twsrc%5Etfw">December 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </li>
-          <li>
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">How should you search, filter, and paginate data with Next.js? This demo has 50,000 books in a Postgres database.<br><br>• Page Load: When the page loads, we see the React Suspense fallback. This loading skeleton is displayed until the first page of books is retrieved from the… <a href="https://t.co/UekGnPFMtW">pic.twitter.com/UekGnPFMtW</a></p>&mdash; Lee Robinson (@leeerob) <a href="https://twitter.com/leeerob/status/1822668486214140134?ref_src=twsrc%5Etfw">August 11, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </li>
-        </ul>
         <button type="button">Anterior</button>
         <button type="button">Siguiente</button>
       </div>
     </section>
-    <nav>
+    <nav style="display: none;">
       <h2>Repositorio</h2>
       <p>Respositorio institucional de Boron Studio</p>
       <nav>
-        <ul>
+        <ul class="rm-list-default">
           <li>
             <a href="#">Autor</a>
           </li>
@@ -107,9 +130,9 @@
         </ul>
       </nav>
     </nav>
-    <nav>
+    <nav style="display: none;">
       <h2>Novedades</h2>
-      <ul>
+      <ul class="rm-list-default">
         <li>
           <a href="#">
             <h3>Webinar</h3>
@@ -141,15 +164,15 @@
       </ul>
     </nav>
   </main>
-  <footer>
+  <footer style="display: none;">
     <img src="./assets/images/borom-logo.svg" alt="Borom">
     <p>Enterate de las últimas novedades</p>
     <button type="button">Suscribite a nuestro newsleter</button>
-    <a href="mailto:info@boronstudio.com">info@boronstudio.com</a>
+    <button href="mailto:info@boronstudio.com">info@boronstudio.com</button>
     <a href="http://www.youtube.com">Youtube</a>
     <a href="http://www.twitter.com">Twitter</a>
     <nav>
-      <ul>
+      <ul class="rm-list-default">
         <li>
           <a href="#">Acerca de</a>
         </li>
@@ -176,5 +199,6 @@
     <p>©2023 Todos los derechos reservados. Boron studio</p>
     <p>By Boron studio</p>
   </footer>
+  <script type="text/javascript" src="./assets/scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+.body {
+	font-family: var(--ff-main);
+}
+
+.body_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 1rem;
+	margin: auto;
+	width: 100%;
+	max-width: 45rem;
+}
+
+.header-logo {
+	max-width: 134px;
+}
+
+.search-toggle {
+	width: 31px;
+	aspect-ratio: 1;
+	padding: 0;
+	background: url(../images/magnifier.svg);
+	border-color: transparent;
+	overflow: hidden;
+	text-indent: -999999px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.subscribe-button {
+	border-color: transparent;
+	text-transform: uppercase;
+	background-color: var(--cl-accent-500);
+	font-size: .875rem;
+	font-weight: var(--fw-bold);
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	width: fit-content;
+	padding: 1.125em 1.125em;
+
+	&::after {
+		content: '';
+		width: 17px;
+		height: 13px;
+		background-image: url(../images/arrow--newsletter.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+.email-link {
+	font-size: 1rem;
+	font-weight: var(--fw-bold);
+}
+
+.social-link {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	overflow: hidden;
+	text-indent: -999999px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.social-link--you-tube {
+	background-image: url(../images/logo--youtube.svg);
+}
+
+.social-link--you-twitter {
+	background-image: url(../images/logo--twitter.svg);
+}
