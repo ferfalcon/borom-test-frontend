@@ -36,10 +36,11 @@
 	font-size: .875rem;
 	font-weight: var(--fw-bold);
 	display: flex;
-	gap: 1rem;
+	justify-content: space-between;
 	align-items: center;
-	width: fit-content;
-	padding: 1.125em 1.125em;
+	gap: 1rem;
+	width: 100%;
+	padding: 1.275em 1.125em;
 
 	&::after {
 		content: '';
@@ -68,10 +69,30 @@
 	background-repeat: no-repeat;
 }
 
-.social-link--you-tube {
+.social-link--youtube {
 	background-image: url(../images/logo--youtube.svg);
 }
 
 .social-link--you-twitter {
 	background-image: url(../images/logo--twitter.svg);
+}
+
+.mail-n-social {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+
+	.email-link {
+    flex-grow: 1;
+  }
+}
+
+.signature {
+  color: #666666;
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+}
+
+.copyright {
+  font-size: 12px;
 }

@@ -10,7 +10,7 @@
   <title>Bienvenidos | Boron studio</title>
 </head>
 <body class="body">
-  <header class="body_header">
+  <header class="body_header"  style="display: none;">
     <a class="header-logo" href="#">
       <img src="./assets/images/borom-logo.svg" alt="Borom">
     </a>
@@ -47,20 +47,16 @@
           </li>
         </ul>
         <button class="subscribe-button" type="button">Suscribite a nuestro newsleter</button>
-        <div class="top-menu__mail-n-social">
+        <div class="mail-n-social">
           <a class="email-link" href="mailto:info@boronstudio.com">info@boronstudio.com</a>
-          <a class="social-link   social-link--you-tube" href="http://www.youtube.com">
-            Youtube
-          </a>
-          <a class="social-link   social-link--you-twitter" href="http://www.twitter.com">
-            Twitter
-          </a>
+          <a class="social-link   social-link--youtube" href="http://www.youtube.com">Youtube</a>
+          <a class="social-link   social-link--you-twitter" href="http://www.twitter.com">Twitter</a>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <article class="main-article">
+    <article class="main-article" style="display: none;">
       <h1 class="main-article__heading">Bienvenidos</h1>
       <p class="main-article__sub-heading">Desarrollamos y <em class="background">promovemos investigación,</em> innovación y divulgación sobre <em class="underline">tecnología digital</em> y aprendizaje, en <em class="underline   underline--long">Uruguay y América Latina</em></p>
       <ul class="keywords-slider   rm-list-default">
@@ -102,13 +98,39 @@
         </picture>
       </section>
     </article>
-    <section style="display: none;">
-      <h2>Seguinos en Twitter</h2>
-      <img src="./assets/images/metting.png" alt="Personas en un reunión">
-      <div>
-        <button type="button">Anterior</button>
-        <button type="button">Siguiente</button>
+    <section class="article-w-image" style="display: none;">
+      <h2 class="article-w-image__heading">Seguinos en Twitter</h2>
+      <div class="article-w-image__copy">
+        <div class="slider">
+          <ul class="slider__item-list">
+            <li class="slider__item">
+              <blockquote><h1>1</h1>🌟 Finding the right typeface for a logo is challenging and time-consuming.</blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote><h1>2</h1>🔥 New blog post! 🔥</blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote><h1>3</h1>How should you search, filter, and paginate data with Next.js?</blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote><h1>4</h1>Finding the right 🌟🌟🌟🌟 typeface for a logo is challenging and time-consuming.</blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote><h1>5</h1>New blog post! 🔥</blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote><h1>6</h1>How should you search, filter, and paginate data with Next.js?</blockquote>
+            </li>
+          </ul>
+          <section class="slider__controls">
+            <button name="prev-slide" type="button">Previous</button>
+            <button name="next-slide" type="button">Next</button>
+          </section>
+        </div>
       </div>
+      <picture class="article-w-image__image">
+        <img class="" src="./assets/images/metting.png" alt="Personas en un reunión" width="719" height="730">
+      </picture>
     </section>
     <nav style="display: none;">
       <h2>Repositorio</h2>
@@ -164,41 +186,48 @@
       </ul>
     </nav>
   </main>
-  <footer style="display: none;">
-    <img src="./assets/images/borom-logo.svg" alt="Borom">
-    <p>Enterate de las últimas novedades</p>
-    <button type="button">Suscribite a nuestro newsleter</button>
-    <button href="mailto:info@boronstudio.com">info@boronstudio.com</button>
-    <a href="http://www.youtube.com">Youtube</a>
-    <a href="http://www.twitter.com">Twitter</a>
-    <nav>
-      <ul class="rm-list-default">
+  <footer class="footer">
+    <img class="footer__logo" src="./assets/images/borom-logo--light.svg" alt="Boron" width="231" height="36">
+    <nav class="footer__navigation">
+      <ul class="footer__navigation-list   rm-list-default">
         <li>
           <a href="#">Acerca de</a>
-        </li>
-        <li>
-          <a href="#">Proyectos</a>
-        </li>
-        <li>
-          <a href="#">Repositorio</a>
-        </li>
-        <li>
-          <a href="#">Novedades</a>
         </li>
         <li>
           <a href="#">Contacto</a>
         </li>
         <li>
+          <a href="#">Proyectos</a>
+        </li>
+        <li>
           <a href="#">Líneas de investigación</a>
+        </li>
+        <li>
+          <a href="#">Repositorio</a>
         </li>
         <li>
           <a href="#">Información financiera</a>
         </li>
+        <li>
+          <a href="#">Novedades</a>
+        </li>
       </ul>
     </nav>
-    <p>©2023 Todos los derechos reservados. Boron studio</p>
-    <p>By Boron studio</p>
+    <div class="footer__newsletter">
+      <p class="footer__newsletter-heading">Enterate de las últimas novedades</p>
+      <button class="subscribe-button" type="button">Suscribite a nuestro newsleter</button>
+    </div>
+    <nav class="footer__mail-n-social   mail-n-social">
+      <a class="email-link" href="mailto:info@boronstudio.com">info@boronstudio.com</a>
+      <a class="social-link   social-link--youtube" href="http://www.youtube.com">Youtube</a>
+      <a class="social-link   social-link--you-twitter" href="http://www.twitter.com">Twitter</a>
+    </nav>
+    <p class="footer__signature   signature">
+      <span class="author">By Boron studio</span>
+      <span class="copyright">©2023 Todos los derechos reservados. Boron studio</span>
+    </p>
   </footer>
   <script type="text/javascript" src="./assets/scripts/script.js"></script>
+  <script type="text/javascript" src="./assets/scripts/slider.js"></script>
 </body>
 </html>

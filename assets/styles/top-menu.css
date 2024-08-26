@@ -44,9 +44,3 @@
 	display: flex;
 	gap: .25rem;
 }
-
-.top-menu__mail-n-social {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1.5rem;
-}

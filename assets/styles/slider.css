@@ -1,0 +1,49 @@
+/* Basic Reset */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.slider__item-list {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  min-width: 100%;
+  list-style: none;
+  padding: 20px;
+  border: solid thin white;
+}
+
+.slider__controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__controls button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.slider__controls button:hover {
+  background-color: #555;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .slider__controls button {
+    display: none;
+  }
+}

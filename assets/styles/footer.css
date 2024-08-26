@@ -1,0 +1,124 @@
+body {
+  /* background-image: url(../images/test/footer--mobile.png);
+  background-repeat: no-repeat;
+  background-position: top center; */
+}
+
+.footer {
+  background: black;
+  color: white;
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  p {
+    margin-block: 0;
+  }
+}
+
+
+
+.footer__navigation {
+  grid-area: nav;
+  margin-bottom: 3.2rem;
+  
+  .footer__navigation-list {
+  
+    @media (min-width: 320px) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 0 3rem;
+    }
+
+    @media (min-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  
+    a {
+      font-weight: var(--fw-semibold);
+      padding-block: .25rem;
+      margin-bottom: .75rem;
+      display: inline-block;
+    }
+  }
+}
+
+.footer__newsletter {
+  
+  .footer__newsletter-heading {
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: var(--fw-bold);
+  }
+}
+
+
+
+/* LAYOUT */
+.footer {
+  padding-block: 3.9rem .75rem;
+
+  display: grid;
+  grid-template-columns: 1.8rem 1fr 1.8rem;
+  grid-template-areas: 
+      '.  logo           .'
+      '.  nav            .'
+      '.  newsletter     .'
+      '.  mail-n-social  .'
+      '.  signature      .';
+  
+  
+  @media (min-width:40rem) {
+    grid-template-columns: 2rem 1fr 1fr 2rem 1fr 2rem;
+    grid-template-areas: 
+      '.  logo            logo            .           nav     .'
+      '.  newsletter      newsletter      .           nav     .'
+      '.  mail-n-social   mail-n-social   .           nav     .'
+      '.  signature       signature       signature   .       .';
+  }
+  
+  @media (min-width:64rem) {
+    grid-template-columns: 2rem 4.5rem 2fr 2rem 2fr 2rem 1fr 2rem;
+    grid-template-areas: 
+      '. .            logo        .            .                .           nav         .'
+      '. .            newsletter  .            mail-n-social    .            nav         .'
+      '. signature    signature   signature    signature        signature    signature   .';
+  }
+}
+
+.footer__logo {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 3.4rem;
+  grid-area: logo;
+}
+
+.footer__newsletter {
+  margin-bottom: 2.625rem;
+  max-width: max-content;
+  grid-area: newsletter;
+  
+  .footer__newsletter-heading {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.footer__mail-n-social {
+  margin-bottom: 2.625rem;
+  grid-area: mail-n-social;
+}
+
+.footer__signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  grid-area: signature;
+
+  @media (min-width:40rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
