@@ -10,7 +10,7 @@
   <title>Bienvenidos | Boron studio</title>
 </head>
 <body class="body">
-  <header class="body_header"  style="display: none;">
+  <header class="body_header" style="display: none;">
     <a class="header-logo" href="#">
       <img src="./assets/images/borom-logo.svg" alt="Borom">
     </a>
@@ -129,64 +129,100 @@
         </div>
       </div>
       <picture class="article-w-image__image">
-        <img class="" src="./assets/images/metting.png" alt="Personas en un reunión" width="719" height="730">
+        <img src="./assets/images/metting.png" alt="Personas en un reunión" width="719" height="730">
       </picture>
     </section>
-    <nav style="display: none;">
-      <h2>Repositorio</h2>
-      <p>Respositorio institucional de Boron Studio</p>
-      <nav>
-        <ul class="rm-list-default">
-          <li>
-            <a href="#">Autor</a>
+    <section class="repository">
+      <h2 class="repository__heading">Repositorio</h2>
+      <p class="repository__subheading">Respositorio institucional de Boron Studio</p>
+      <nav class="repository__navigation">
+        <ul class="rm-list-default   repository__link-list">
+          <li class="repository__link-list-item">
+            <a class="repository__link" href="#">
+              Autor
+              <picture class="repository__link-image">
+                <img src="./assets/images/repo--image-1.png" alt="Perro" width="331" height="221">
+              </picture>
+            </a>
           </li>
-          <li>
-            <a href="#">Título</a>
+          <li class="repository__link-list-item">
+            <a class="repository__link" href="#">
+              Título
+              <picture class="repository__link-image">
+                <img src="./assets/images/repo--image-2.png" alt="Perro" width="331" height="221">
+              </picture>
+            </a>
           </li>
-          <li>
-            <a href="#">Líneas de navegación</a>
+          <li class="repository__link-list-item">
+            <a class="repository__link" href="#">
+              Líneas de navegación
+              <picture class="repository__link-image">
+                <img src="./assets/images/repo--image-3.png" alt="Perro" width="331" height="221">
+              </picture>
+            </a>
           </li>
-          <li>
-            <a href="#">Descripciones</a>
+          <li class="repository__link-list-item">
+            <a class="repository__link" href="#">
+              Descripciones
+              <picture class="repository__link-image">
+                <img src="./assets/images/repo--image-4.png" alt="Perro" width="331" height="221">
+              </picture>
+            </a>
           </li>
         </ul>
       </nav>
-    </nav>
-    <nav style="display: none;">
-      <h2>Novedades</h2>
-      <ul class="rm-list-default">
+    </section>
+    <nav class="news" style="display: none;">
+      <h2 class="news__heading">Novedades</h2>
+      <ul class="news__list   rm-list-default">
         <li>
-          <a href="#">
-            <h3>Webinar</h3>
-            <span>+</span>
-            <p>Boron Studio invita a webinar sobre educación híbrida</p>
+          <a class="news-item-post" href="#">
+            <picture class="news-item-post__image">
+              <img src="./assets/images/news--edu-hibrida.png" alt="Teclado y una taza de cafe" width="357" height="344">
+            </picture>
+            <h3 class="news-item-post__heading">
+              Webinar <span class="news-item-post__plus">+</span>
+            </h3>
+            <p class="news-item-post__excerpt">Boron Studio invita a webinar sobre educación híbrida</p>
           </a>
         </li>
         <li>
-          <a href="#">
-            <h3>Evento</h3>
-            <span>+</span>
-            <p>Boron Studio invita a webinar sobre educación híbrida</p>
+          <a class="news-item-post" href="#">
+            <picture class="news-item-post__image">
+              <img src="./assets/images/news--edu-hibrida-2.png" alt="Grupo de personas con laptops sentados a la mesa" width="358" height="239">
+            </picture>
+            <h3 class="news-item-post__heading">
+              Evento <span class="news-item-post__plus">+</span>
+            </h3>
+            <p class="news-item-post__excerpt">Boron Studio invita a webinar sobre educación híbrida</p>
           </a>
         </li>
         <li>
-          <a href="#">
-            <h3>Evento</h3>
-            <span>+</span>
-            <p>Boron Studio presenta experiencia de educación a distancia en México</p>
+          <a class="news-item-post" href="#">
+            <picture class="news-item-post__image">
+              <img src="./assets/images/news--edu-mexico.png" alt="Laptop, ratón y teléfono móvil" width="359" height="287">
+            </picture>
+            <h3 class="news-item-post__heading">
+              Evento <span class="news-item-post__plus">+</span>
+            </h3>
+            <p class="news-item-post__excerpt">Boron Studio presenta experiencia de educación a distancia en México</p>
           </a>
         </li>
         <li>
-          <a href="#">
-            <h3>Publicación</h3>
-            <span>+</span>
-            <p>Publicación del libro “Tecnología: Lo que puede y no puede hacer por la educación”</p>
+          <a class="news-item-post" href="#">
+            <picture class="news-item-post__image">
+              <img src="./assets/images/news--libro-lo-que-puede.png" alt="Persona en un escritorio" width="359" height="240">
+            </picture>
+            <h3 class="news-item-post__heading">
+              Publicación <span class="news-item-post__plus">+</span>
+            </h3>
+            <p class="news-item-post__excerpt">Publicación del libro “Tecnología: Lo que puede y no puede hacer por la educación”</p>
           </a>
         </li>
       </ul>
     </nav>
   </main>
-  <footer class="footer">
+  <footer class="footer" style="display: none;">
     <img class="footer__logo" src="./assets/images/borom-logo--light.svg" alt="Boron" width="231" height="36">
     <nav class="footer__navigation">
       <ul class="footer__navigation-list   rm-list-default">

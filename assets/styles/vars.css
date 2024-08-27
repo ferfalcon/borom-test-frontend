@@ -17,7 +17,14 @@ html {
 
 	/* Accent */
 	--cl-accent-500: hsl(182 58% 66%);
+	--cl-accent-700: hsl(203 89% 53%);
 
 	/* Accent secondary */
 	--cl-accent-secondary-500: hsl(9 100% 63%);
+	
+	/* Blog colours */
+	--cl-blog-1: hsl(196 72% 56%);
+	--cl-blog-2: hsl(182 58% 66%);
+	--cl-blog-3: hsl(158 61% 54%);
+	--cl-blog-4: hsl(49 99% 62%);
 }

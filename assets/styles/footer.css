@@ -1,9 +1,3 @@
-body {
-  /* background-image: url(../images/test/footer--mobile.png);
-  background-repeat: no-repeat;
-  background-position: top center; */
-}
-
 .footer {
   background: black;
   color: white;
@@ -12,49 +6,13 @@ body {
     color: white;
     text-decoration: none;
   }
-
-  p {
-    margin-block: 0;
-  }
 }
 
-
-
-.footer__navigation {
-  grid-area: nav;
-  margin-bottom: 3.2rem;
-  
-  .footer__navigation-list {
-  
-    @media (min-width: 320px) {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 0 3rem;
-    }
-
-    @media (min-width: 640px) {
-      grid-template-columns: 1fr;
-    }
-  
-    a {
-      font-weight: var(--fw-semibold);
-      padding-block: .25rem;
-      margin-bottom: .75rem;
-      display: inline-block;
-    }
-  }
+.footer__newsletter-heading {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: var(--fw-bold);
 }
-
-.footer__newsletter {
-  
-  .footer__newsletter-heading {
-    font-size: 2rem;
-    line-height: 1.25;
-    font-weight: var(--fw-bold);
-  }
-}
-
-
 
 /* LAYOUT */
 .footer {
@@ -63,28 +21,36 @@ body {
   display: grid;
   grid-template-columns: 1.8rem 1fr 1.8rem;
   grid-template-areas: 
-      '.  logo           .'
-      '.  nav            .'
-      '.  newsletter     .'
-      '.  mail-n-social  .'
-      '.  signature      .';
-  
+      '.   logo            .'
+      '.   nav             .'
+      '.   newsletter      .'
+      '.   mail-n-social   .'
+      '.   signature       .';
   
   @media (min-width:40rem) {
     grid-template-columns: 2rem 1fr 1fr 2rem 1fr 2rem;
     grid-template-areas: 
-      '.  logo            logo            .           nav     .'
-      '.  newsletter      newsletter      .           nav     .'
-      '.  mail-n-social   mail-n-social   .           nav     .'
-      '.  signature       signature       signature   .       .';
+      '.   logo            logo            .           nav         .'
+      '.   newsletter      newsletter      .           nav         .'
+      '.   mail-n-social   mail-n-social   .           nav         .'
+      '.   signature       signature       signature   signature   .';
   }
   
   @media (min-width:64rem) {
-    grid-template-columns: 2rem 4.5rem 2fr 2rem 2fr 2rem 1fr 2rem;
+    grid-template-columns: 2rem 3fr 3rem 3fr 3rem 2fr 2rem;
     grid-template-areas: 
-      '. .            logo        .            .                .           nav         .'
-      '. .            newsletter  .            mail-n-social    .            nav         .'
-      '. signature    signature   signature    signature        signature    signature   .';
+      '.   logo         .           .               .           nav         .'
+      '.   newsletter   .           mail-n-social   .           nav         .'
+      '.   signature    signature   signature       signature   signature   .';
+  }
+
+  @media (min-width:86rem) {
+    padding-block: 5.4rem .75rem;
+    grid-template-columns: 4rem 4.4rem 2.125fr 3.75rem 2.125fr 3.75rem 1.5fr 4rem;
+    grid-template-areas: 
+      '.   .           logo         .           .               .           nav         .'
+      '.   .           newsletter   .           mail-n-social   .           nav         .'
+      '.   signature   signature    signature   signature       signature   signature   .';
   }
 }
 
@@ -93,21 +59,71 @@ body {
   max-width: 150px;
   margin-bottom: 3.4rem;
   grid-area: logo;
-}
-
-.footer__newsletter {
-  margin-bottom: 2.625rem;
-  max-width: max-content;
-  grid-area: newsletter;
   
-  .footer__newsletter-heading {
-    margin-bottom: 1.6rem;
+  @media (min-width:64rem) {
+    max-width: 238px;
+    margin-bottom: 5.4rem;
   }
 }
 
+.footer__navigation {
+  grid-area: nav;
+  margin-bottom: 3.875rem;
+  
+  @media (min-width: 40rem) {
+    margin-bottom: 0;
+    display: grid;
+    align-items: end;
+  }
+  
+  .footer__navigation-list {
+    display: grid;
+  
+    @media (min-width: 20rem) {
+      grid-template-columns: 1fr 2fr;
+      gap: .75rem 2.75rem;
+    }
+
+    @media (min-width: 40rem) {
+      grid-template-columns: 1fr;
+    }
+
+    a {
+      font-weight: var(--fw-semibold);
+      display: inline-block;
+      padding-block: .25rem;
+      
+      @media (min-width:64rem) { 
+        padding-block: .28rem;
+      }
+    }
+  }
+}
+
+.footer__newsletter {
+  margin-block: 0 2.5rem;
+  max-width: max-content;
+  grid-area: newsletter;
+
+  @media (min-width:64rem) {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+}
+  
+.footer__newsletter-heading {
+  text-wrap: balance;
+  margin-block: 0 1.85rem;
+}
+
 .footer__mail-n-social {
-  margin-bottom: 2.625rem;
   grid-area: mail-n-social;
+
+  @media (min-width:64rem) {
+    margin-top: auto;
+    margin-bottom: .75rem;
+    max-width: 340px;
+  }
 }
 
 .footer__signature {
@@ -116,9 +132,15 @@ body {
   align-items: center;
   gap: .75rem;
   grid-area: signature;
-
+  margin-block: 2.685rem 0;
+  
   @media (min-width:40rem) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width:64rem) {
+    flex-direction: row-reverse;
+    margin-top: 3.2rem;
   }
 }
