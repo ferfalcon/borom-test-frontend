@@ -1,14 +1,10 @@
-const topMenu = document.querySelector('[data-top-menu-content]');
-const topMenuToggle = document.querySelector('[data-top-menu-toggle]');
+const mainMenu = document.querySelector('[data-main-menu-content]');
+const mainMenuToggle = document.querySelector('[data-main-menu-toggle]');
 
-
-console.log(topMenu);
-console.log(topMenuToggle);
-
-topMenuToggle.addEventListener("click", function (e) {
-  if(topMenu.classList.contains('active')) {
-    topMenu.classList.remove('active');
+mainMenuToggle.addEventListener("click", function (e) {
+  if(mainMenu.classList.contains('active')) {
+    mainMenu.classList.remove('active');
   } else {
-    topMenu.classList.add('active')
+    mainMenu.classList.add('active')
   }
 });
